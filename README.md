@@ -4,7 +4,8 @@ This is plugin for highlighting a *.kbs syntax for Sublime2 text editor.
 2) How to use it
 3) Current status of plugin
 
-1) Need to clone repository and copy "KBS" folder in your Sublime2 plugins, which can be founded when you will try to create and save dummy plugin, using Tools -> New Plugin.
+1) Need to clone repository and copy "KBS" folder in your Sublime2 plugins, which can be founded when you will try to create and save dummy plugin, using Tools -> New Plugin
+
 Path for Windows: C:\Users\userName\AppData\Roaming\Sublime Text 2\Packages\User
 
 After that just restart the editor.
@@ -20,5 +21,6 @@ After that just restart the editor.
 
 
 Thank you for using this.
+
 @author Victor Malyshev
 For more information please email me on vmalyshev0@gmail.com
