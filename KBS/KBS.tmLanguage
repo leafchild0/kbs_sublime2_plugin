@@ -7,44 +7,51 @@
 		<string>kbs</string>
 	</array>
 	<key>name</key>
-	<string>Kbs</string>
+	<string>KBS</string>
 	<key>patterns</key>
-	<array>
+
+<array>
 		<dict>
 			<key>match</key>
 			<string>\b(CxComp|CxDecl|CxFlexModel|CxParaGroup|CxArbit|CxKB|CxPref|CxArbitMod|CxAccNum|CxArbModNum|CxFloat|CxEnum|CxCompPara|CxContainerPara|CxNum|CxConsGroup|CxRule|CxMExp|CxExp|CxSQLProps|CxDBProps|CxActAddContElem|CxDDCmp|CxFuncExp|CxArbitMulti|CxMultiEnum|CxFunc)\b</string>
 			<key>name</key>
-			<string>keyword.control.source.kbs</string>
-		</dict>
+			<string>keyword.control.text.kbs</string>
+		</dict> 
 		<dict>
 			<key>match</key>
-			<string>(\*|\b/\b|%|\+|-|\*\*|\#|\@|\^|\|=)</string>
+			<string>(\*|\b/\b|%|\+|-|\*\*|\#|\@|\^|\|=|\?|&amp;)</string>
 			<key>name</key>
-			<string>keyword.operator.source.kbs</string>
+			<string>keyword.operator.text.kbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(\(|\)|\[|\]|{|})</string>
 			<key>name</key>
-			<string>keyword.operator.source.kbs</string>
+			<string>keyword.operator.text.kbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(NMPostingEnable|NMPostingConstraintFiltering)\b</string>
 			<key>name</key>
-			<string>entity.name.tag.kbs</string>
+			<string>variable.parameter.text.kbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(noRollUp|float|noAutoAssign|noRecurse|virtual|delayedEval)\b</string>
+			<string>\b(noRollUp|float|noAutoAssign|noRecurse|virtual|delayedEval|mustPreset|stickyPreset|defineHide)\b</string>
 			<key>name</key>
-			<string>entity.name.attribute.kbs</string>
+			<string>entity.other.attribute-name.kbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b\d+(\.\d+)?(f|F|L)?\b</string>
 			<key>name</key>
-			<string>constant.numeric.source.kbs</string>
+			<string>constant.numeric.text.kbs</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(CREATE|(NOT| )?MEMBER|ASSIGNED)\b</string>
+			<key>name</key>
+			<string>comment.other.kbs</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -52,21 +59,21 @@
 			<key>end</key>
 			<string>'</string>
 			<key>name</key>
-			<string>string.quoted.single.source.kbs</string>
+			<string>string.quoted.single.text.kbs</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>"</string>
+			<string>["|\\"]</string>
 			<key>end</key>
-			<string>"</string>
+			<string>["|\\"]</string>
 			<key>name</key>
-			<string>string.quoted.double.source.kbs</string>
+			<string>string.quoted.double.text.kbs</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b([A]|[P]|[R]|[S])\b</string>
 			<key>name</key>
-			<string>storage.type.source.kbs</string>
+			<string>storage.type.text.kbs</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -74,17 +81,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.source.kbs</string>
+					<string>variable.parameter.text.kbs</string>
 				</dict>
-				<key>2</key>
+				<key>6</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.operator.source.kbs</string>
+					<string>keyword.operator.text.kbs</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type.source.kbs</string>
+					<string>storage.type.text.kbs</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -94,7 +101,7 @@
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>variable.name.attribute.kbs</string>
+					<string>keyword.other.attribute.kbs</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -102,14 +109,14 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string> (?:([-_a-zA-Z0-9]+)((:)))?([-_a-zA-Z0-9]+)=|(?:([-_a-zA-Z0-9]+)((:)))?([-_a-zA-Z0-9]+) =|\?</string>
+			<string> (?:([-_a-zA-Z0-9]+)((:)))?([-_a-zA-Z0-9]+)(=| =)</string>
 			<key>name</key>
-			<string>variable.parameter.source.kbs</string>
+			<string>variable.parameter.text.kbs</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.kbs</string>
+	<string>text.kbs</string>
 	<key>uuid</key>
-	<string>40d7173c-d213-4009-938e-5249ec75849d</string>
+	<string>f87d9ac8-6cf4-4881-9dbd-b9c766c89ad0</string>
 </dict>
 </plist>
